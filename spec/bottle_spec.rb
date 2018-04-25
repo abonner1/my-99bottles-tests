@@ -62,8 +62,8 @@ describe Bottle do
 
   context "#song" do
     it "returns the entire song" do
-      # in a real testing situation, you might feel compelled to copy out each verses
-      # that, perhaps, would be the best solution
+      # in a real testing situation, you might feel compelled to copy out each
+      # verse; that, perhaps, would be the best solution
       expect(bottle.song.split("\n").length).to eq(200)
     end
   end
