@@ -62,7 +62,7 @@ describe Bottle do
 
   context "#song" do
     it "returns the entire song" do
-      expect(bottle.song.split().length).to eq(200)
+      expect(bottle.song.split("\n").length).to eq(200)
     end
   end
 end
