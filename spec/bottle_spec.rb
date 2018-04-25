@@ -31,5 +31,12 @@ describe Bottle do
 
       expect(bottle.verse(1)).to eq(first_verse)
     end
+
+    it "returns the verse for 0 bottles" do
+      final_verse = "No more bottles of beer on the wall, no more bottles of beer.\n" +
+                    "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
+
+      expect(bottle.verse(0)).to eq(final_verse)
+    end
   end
 end
