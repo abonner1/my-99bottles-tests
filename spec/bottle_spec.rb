@@ -3,7 +3,7 @@ require "bottle.rb"
 describe Bottle do
   let(:bottle) { Bottle.new }
 
-  it "returns the first verse" do
+  it "returns a verse" do
     verse = "99 bottles of beer on the wall, 99 bottles of beer.\n" +
             "Take one down and pass it around, 98 bottles of beer on the wall.\n"
 
@@ -17,7 +17,7 @@ describe Bottle do
     expect(bottle.verse(3)).to eq(another_verse)
   end
 
-  it "returns verse 2 making bottles singular" do
+  it "returns the verse for 2 bottles" do
     second_verse = "2 bottles of beer on the wall, 2 bottles of beer.\n" +
                    "Take one down and pass it around, 1 bottle of beer on the wall.\n"
 
