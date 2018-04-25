@@ -59,4 +59,10 @@ describe Bottle do
       expect(bottle.verses(2, 0)).to eq(last_three_verses)
     end
   end
+
+  context "#song" do
+    it "returns the entire song" do
+      expect(bottle.song.split().length).to eq(200)
+    end
+  end
 end
