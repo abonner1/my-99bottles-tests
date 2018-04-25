@@ -23,4 +23,11 @@ describe Bottle do
 
     expect(bottle.verse(2)).to eq(second_verse)
   end
+
+  it "returns the verse for 1 bottle" do
+    first_verse = "1 bottle of beer on the wall, 1 bottle of beer.\n" +
+                  "Take it down and pass it around, no more bottles of beer on the wall.\n"
+
+    expect(bottle.verse(1)).to eq(first_verse)
+  end
 end
